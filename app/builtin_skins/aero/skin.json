@@ -1,0 +1,9 @@
+{
+  "format": 1,
+  "id": "aero",
+  "name": "Frutiger Aero",
+  "author": "Retro Boom Box",
+  "version": "1.0",
+  "description": "Vidro azul brilhante, botões redondos e uma esfera verde para o play.",
+  "base": "aero"
+}

@@ -1,0 +1,267 @@
+{
+  "format": 1,
+  "id": "capsula-verde",
+  "name": "Cápsula Verde",
+  "author": "Retro Boom Box",
+  "version": "1.0",
+  "description": "Player compacto em forma de cápsula. A lista de músicas abre numa janela à parte.",
+  "base": "aero",
+  "theme": {
+    "text": "#0a3d14",
+    "text_dim": "#2f7a38",
+    "glyph": "#0a4a1b",
+    "accent": "#1fa043",
+    "lcd_top": "#e6ffe0",
+    "lcd_bottom": "#93e07e",
+    "lcd_text": "#0a3a12",
+    "lcd_dim": "#2f7a38",
+    "list_bg": "#eefbea",
+    "list_text": "#0a3d14",
+    "list_dim": "#2f7a38",
+    "list_sel_top": "#ffffff",
+    "list_sel_bottom": "#c9f1c0",
+    "list_sel_text": "#06300f",
+    "list_border": "#9fd49a",
+    "dialog_bg": "#e0f6da",
+    "dialog_text": "#0a3d14",
+    "field_border": "#6fbf63",
+    "btn_mid": "#d9f6d2",
+    "btn_low": "#a8e29c",
+    "btn_end": "#d3f3cb",
+    "btn_border": "#5fb352",
+    "groove_a": "#86c47a",
+    "groove_b": "#d4efcc",
+    "fill_a": "#c7f59a",
+    "fill_b": "#2fb84a",
+    "knob_b": "#62b455",
+    "viz_colors": [
+      "#b7e32d",
+      "#33c24a",
+      "#0b8a6a"
+    ]
+  },
+  "body": "body.png",
+  "layout": {
+    "window": [
+      720,
+      470
+    ],
+    "lcd": [
+      90,
+      84,
+      540,
+      236
+    ],
+    "info": [
+      108,
+      94,
+      504,
+      124
+    ],
+    "stage": [
+      108,
+      222,
+      504,
+      64
+    ],
+    "viz_label": [
+      140,
+      290,
+      408,
+      26
+    ],
+    "seek": [
+      90,
+      334,
+      540,
+      28
+    ],
+    "volume": [
+      96,
+      389,
+      100,
+      28
+    ],
+    "buttons": {
+      "theme": [
+        452,
+        44,
+        26,
+        26
+      ],
+      "gear": [
+        484,
+        44,
+        26,
+        26
+      ],
+      "min": [
+        516,
+        44,
+        26,
+        26
+      ],
+      "close": [
+        548,
+        44,
+        26,
+        26
+      ],
+      "mini": [
+        420,
+        44,
+        26,
+        26
+      ],
+      "eq": [
+        388,
+        44,
+        26,
+        26
+      ],
+      "left": [
+        108,
+        290,
+        26,
+        26
+      ],
+      "video": [
+        556,
+        290,
+        26,
+        26
+      ],
+      "right": [
+        586,
+        290,
+        26,
+        26
+      ],
+      "shuffle": [
+        207,
+        387,
+        30,
+        30
+      ],
+      "prev": [
+        247,
+        382,
+        44,
+        44
+      ],
+      "play": [
+        301,
+        370,
+        64,
+        64
+      ],
+      "stop": [
+        375,
+        382,
+        44,
+        44
+      ],
+      "next": [
+        429,
+        382,
+        44,
+        44
+      ],
+      "repeat": [
+        483,
+        387,
+        30,
+        30
+      ],
+      "mute": [
+        535,
+        387,
+        30,
+        30
+      ],
+      "playlist": [
+        575,
+        387,
+        30,
+        30
+      ]
+    }
+  },
+  "mini": {
+    "body": "mini.png",
+    "layout": {
+      "window": [
+        560,
+        150
+      ],
+      "lcd": [
+        45,
+        28,
+        298,
+        62
+      ],
+      "info": [
+        52,
+        31,
+        284,
+        56
+      ],
+      "seek": [
+        38,
+        104,
+        312,
+        22
+      ],
+      "buttons": {
+        "prev": [
+          372,
+          58,
+          34,
+          34
+        ],
+        "play": [
+          410,
+          46,
+          58,
+          58
+        ],
+        "next": [
+          472,
+          58,
+          34,
+          34
+        ],
+        "eq": [
+          376,
+          112,
+          24,
+          24
+        ],
+        "mini": [
+          404,
+          112,
+          24,
+          24
+        ],
+        "mute": [
+          432,
+          112,
+          24,
+          24
+        ],
+        "min": [
+          460,
+          112,
+          24,
+          24
+        ],
+        "close": [
+          488,
+          112,
+          24,
+          24
+        ]
+      }
+    }
+  }
+}

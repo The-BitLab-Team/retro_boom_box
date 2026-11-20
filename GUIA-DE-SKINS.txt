@@ -1,0 +1,303 @@
+GUIA DE SKINS E PACOTES - Retro Boom Box
+=========================================
+
+Este guia explica, passo a passo, como criar e instalar:
+  - SKINS ............ mudam o visual do player (cores, formato da janela, botões)
+  - PACOTES DE VISUALIZADORES ... novos desenhos animados que reagem à música
+
+Você não precisa saber programar para fazer skins. Só para fazer visualizadores.
+
+
+PARTE 1 - INSTALAR (para quem só quer usar)
+-------------------------------------------
+1. Abra o player e clique na engrenagem (Configurações).
+2. Vá na aba "Skins e pacotes".
+3. Skins:
+     "Instalar skin..."   escolha um arquivo .rbbskin (ou .zip)
+     "De uma pasta..."    escolha uma pasta de skin que você já descompactou
+     Clique no nome da skin na lista para usá-la. "Remover" apaga a skin instalada.
+4. Visualizadores:
+     "Instalar pacote..." escolha um arquivo .rbbviz (ou .zip)
+     Depois de instalar, MARQUE a caixinha ao lado do nome para ativar.
+     O programa vai mostrar um aviso antes de ativar (veja "Segurança" abaixo).
+   Os visualizadores ativados aparecem nas setinhas embaixo do visor.
+5. Os exemplos que acompanham o programa estão na pasta "exemplos".
+   Teste instalando "capsula-azul.rbbskin" e "chuva-neon.rbbviz".
+
+Atalho: o botão do círculo meio preto/branco, no topo do player, passa para a
+próxima skin instalada.
+
+
+SEGURANÇA - LEIA ISTO
+---------------------
+  - SKINS são só imagens e configurações. Não executam nada. O programa recusa
+    skins com arquivos estranhos (como .exe), caminhos suspeitos ou tamanho exagerado.
+  - PACOTES DE VISUALIZADORES contêm um pequeno programa em Python (viz.py) que
+    roda dentro do player, com os mesmos poderes dele. Por isso:
+      * só ficam desligados até você ativar, e o programa avisa antes;
+      * ative apenas pacotes feitos por você ou por quem você confia;
+      * se um pacote der erro durante a música, o programa o desliga sozinho
+        e volta para o visualizador "Barras".
+  Quem vender ou distribuir pacotes deve avisar isso aos clientes.
+
+
+PARTE 2 - CRIAR UMA SKIN
+------------------------
+Uma skin é uma PASTA com um arquivo chamado skin.json e, se quiser, imagens.
+
+A skin mais simples possível (só troca as cores) - crie a pasta "minha-skin"
+com este skin.json dentro:
+
+    {
+      "format": 1,
+      "id": "minha-skin",
+      "name": "Minha Skin",
+      "author": "Seu Nome",
+      "version": "1.0",
+      "description": "Uma frase sobre a skin.",
+      "base": "metal",
+      "theme": {
+        "lcd_text": "#ff7bf0",
+        "accent": "#d65cff"
+      }
+    }
+
+Instale com "De uma pasta..." e pronto. Veja o exemplo "neon-roxo".
+
+Campos do skin.json
+  format       sempre 1
+  id           nome interno: só letras minúsculas, números, "-" e "_" (até 40).
+               Não pode ser "aero" nem "metal". Duas skins com o mesmo id se substituem.
+  name         nome que aparece na lista (até 60 letras)
+  author, version, description    opcionais, só informativos
+  base         "aero" (vidro azul) ou "metal" (metal escovado).
+               A base desenha tudo que a sua skin não definir.
+  theme        opcional. Cores e fontes que trocam as da base (lista abaixo).
+  body         opcional. Imagem PNG do corpo da janela (veja "Janela com formato próprio").
+  layout       opcional. Onde fica cada peça. Obrigatório se usar "body".
+  fonts        opcional. Lista de arquivos .ttf/.otf que vão dentro da skin.
+
+Cores (theme)
+  Escreva sempre no formato #rrggbb, por exemplo "#ff8800". (Para pegar a cor
+  certa, use qualquer editor de imagens ou um "seletor de cores" na internet.)
+
+  Texto e destaques:   text  text_dim  glyph  accent
+  Visor (LCD):         lcd_top  lcd_bottom  lcd_border  lcd_text  lcd_dim
+  Lista de músicas:    list_bg  list_text  list_dim  list_sel_top  list_sel_bottom
+                       list_sel_text  list_border
+  Janelinhas (config.):dialog_bg  dialog_text  field_bg  field_border
+  Visualizador:        viz_bg   e   viz_colors (lista com 3 cores: graves, médios, agudos)
+                       Exemplo:  "viz_colors": ["#2fd35a", "#19a8e8", "#0b6fbf"]
+  Botões:              btn_top  btn_mid  btn_low  btn_end  btn_border
+  Botão play (bolinha):play_light  play_mid  play_dark
+  Barras deslizantes:  groove_a  groove_b  (trilho)   fill_a  fill_b  (parte preenchida)
+                       knob_a  knob_b  (bolinha)
+  Fontes:              font  mono   (nomes de fontes, por exemplo "Segoe UI" e "Consolas")
+  Se você não escrever uma cor, vale a da "base".
+
+Janela com formato próprio (body.png)
+  - Faça um PNG com fundo TRANSPARENTE e desenhe o corpo do player nele.
+    O que for transparente fica vazio: o player pode ser redondo, em cápsula,
+    com cantos cortados, qualquer formato.
+  - O tamanho do PNG deve ser o mesmo da janela ("window" no layout).
+    Máximo: 2400 x 1600 pixels.
+  - Deixe espaço para o visor, os botões e a barra de tempo, e depois descreva onde
+    cada um fica no "layout".
+  - Desenhe a sombra suave e o brilho no próprio PNG, se quiser o efeito de vidro.
+
+Layout
+  Todas as posições são retângulos [x, y, largura, altura], em pixels, contados
+  a partir do canto de cima à esquerda da janela.
+
+    "layout": {
+      "window": [720, 470],
+      "lcd":      [90, 84, 540, 236],     moldura/fundo do visor
+      "info":     [108, 94, 504, 124],    tempo, título e artista    (OBRIGATÓRIO)
+      "stage":    [108, 222, 504, 64],    onde aparece o visualizador/vídeo (OBRIGATÓRIO)
+      "viz_label":[140, 290, 408, 26],    nome do visualizador
+      "seek":     [90, 334, 540, 28],     barra de tempo             (OBRIGATÓRIO)
+      "volume":   [96, 389, 100, 28],     barra de volume
+      "buttons": { "prev": [247,382,44,44], "play": [301,370,64,64], ... }
+    }
+
+  Peças opcionais que você pode usar: logo, lcd, viz_label, source (menu da
+  biblioteca/playlist), search (busca), list (lista de músicas), status (texto
+  de estado), volume.
+  Se você NÃO colocar "list", a lista de músicas abre numa janela à parte,
+  e então é obrigatório ter o botão "playlist".
+
+  Botões que existem:
+    theme gear min close        (trocar skin, configurações, minimizar, fechar)
+    eq                          (abre o equalizador)
+    mini                        (liga e desliga o modo mini)
+    left right                  (trocar visualizador)
+    video                       (vídeo em tela cheia)
+    plus dots folder            (playlists e pastas; só fazem sentido com "list")
+    shuffle prev play stop next repeat mute
+    playlist                    (abre/fecha a lista numa janela à parte)
+  OBRIGATÓRIOS: prev, play, stop, next. Botões que você não colocar no layout
+  simplesmente não aparecem. (Quem usa a skin ainda alcança o equalizador e o modo mini
+  pelo clique direito na janela e pelos atalhos Ctrl+E e Ctrl+M.)
+
+  Todos os retângulos precisam caber dentro da janela. Se algo estiver fora ou
+  faltando, o programa recusa a skin e diz exatamente o que corrigir.
+
+Capa do álbum
+  A capa aparece sozinha dentro da peça "info" (à direita do tempo) quando a música
+  tem uma imagem nas tags ou há um cover.jpg / folder.png na pasta. Não precisa
+  configurar nada na skin. Deixe a peça "info" com pelo menos 380 pixels de largura
+  para a capa caber.
+
+Modo mini (opcional)
+  Toda skin já tem um modo mini automático (640 x 184): visor, barra de tempo e os
+  controles principais, com as cores da sua skin. Se quiser um modo mini com o SEU
+  desenho, acrescente um bloco "mini" no skin.json:
+
+    "mini": {
+      "body": "mini.png",
+      "layout": {
+        "window": [560, 150],
+        "lcd":  [45, 28, 298, 62],
+        "info": [52, 31, 284, 56],
+        "seek": [38, 104, 312, 22],
+        "buttons": { "prev": [372,58,34,34], "play": [410,46,58,58], "next": [472,58,34,34],
+                     "mini": [404,112,24,24], "close": [488,112,24,24] }
+      }
+    }
+
+  - "body" é opcional (um PNG com fundo transparente, do tamanho de "window").
+    Sem ele, o programa desenha o corpo padrão da sua "base".
+  - Peças que valem no mini: lcd, info, stage, viz_label, seek, volume e os botões da
+    lista acima (menos plus, dots, folder e playlist: no mini não há lista).
+  - OBRIGATÓRIOS no mini: info, seek e os botões prev, play, next.
+  - Tamanho da janela do mini: de 200 x 60 até 2400 x 1600.
+  - A peça "info" no mini usa um visual compacto: capa pequena à esquerda, título e
+    artista no meio e o tempo à direita. Deixe uns 56 pixels de altura para ela.
+  - Dica: coloque o botão "mini" no layout do mini, senão a pessoa só volta ao modo
+    normal pelo Ctrl+M ou pelo clique direito.
+  - As imagens de botões (buttons/...) e das barras (sliders/...) valem nos dois modos.
+  Veja o exemplo "capsula-azul" (arquivos body.png, mini.png e skin.json).
+
+Imagens de botões (opcional)
+  Dentro da pasta da skin, crie a pasta "buttons" e coloque PNGs com este nome:
+      buttons/play.png            aparência normal
+      buttons/play_hover.png      com o mouse em cima
+      buttons/play_down.png       enquanto clica
+      buttons/play_on.png         "ligado" (só para botões que ligam e desligam,
+                                  como shuffle e repeat)
+  Funciona com qualquer botão da lista acima. O botão especial "pause" é o
+  desenho que o botão play assume enquanto a música toca:
+      buttons/pause.png   pause_hover.png   pause_down.png
+  Só o arquivo "normal" é necessário; os outros são opcionais. A imagem é
+  esticada para o tamanho do botão no layout (faça-a com o dobro do tamanho
+  para ficar nítida). Botões sem imagem usam o desenho da base.
+
+Imagens das barras deslizantes (opcional)
+      sliders/groove.png   o trilho
+      sliders/fill.png     a parte já percorrida
+      sliders/handle.png   a bolinha
+
+Fontes (opcional)
+  Coloque arquivos .ttf ou .otf na pasta e liste em "fonts": ["MinhaFonte.ttf"].
+  Depois use o nome da fonte em theme.font ou theme.mono.
+  Só use fontes que você tem permissão para distribuir.
+
+Como empacotar para vender ou compartilhar (.rbbskin)
+  1. Entre na pasta da skin (a que tem o skin.json).
+  2. Selecione TUDO que está dentro (skin.json, body.png, buttons...).
+  3. Clique com o botão direito > "Enviar para" > "Pasta compactada".
+  4. Troque o final do nome de .zip para .rbbskin
+  (Se preferir, deixe .zip, o player aceita os dois.)
+  Pode ter uma pasta dentro do zip com todos os arquivos; o programa acha o skin.json.
+
+Limites de segurança de uma skin
+  - Tipos de arquivo permitidos: .json .png .jpg .ttf .otf .txt .md
+  - No máximo 300 arquivos e 60 MB
+  - Nada de caminhos com ".." ou que comecem com "/" ou "C:"
+
+Se algo der errado
+  Ao instalar ou aplicar, o programa mostra uma janela com a lista de problemas
+  ("Falta o botão play no layout", "Cor inválida em theme.text", etc.).
+  Corrija o skin.json e instale de novo (ele pergunta se quer substituir).
+  Dica: o skin.json é um arquivo de texto comum, edite no Bloco de Notas. Cuidado com
+  vírgulas e aspas: o último item de uma lista não leva vírgula.
+
+
+PARTE 3 - CRIAR UM PACOTE DE VISUALIZADOR
+-----------------------------------------
+Aqui é preciso um pouco de Python. A melhor forma de começar é copiar o exemplo
+"chuva-neon" (pasta exemplos/chuva-neon) e ir mudando.
+
+Um pacote é uma pasta (ou um .rbbviz, que é um .zip) com dois arquivos:
+
+  viz.json
+      {
+        "format": 1,
+        "id": "chuva-neon",
+        "name": "Chuva Neon",
+        "author": "Seu Nome",
+        "version": "1.0",
+        "description": "Uma frase sobre o visualizador."
+      }
+      (id: letras minúsculas, números, "-" e "_"; name: até 40 letras)
+
+  viz.py
+      Precisa ter uma função chamada draw:
+
+      def draw(p, w, h, v):
+          ...desenhe aqui...
+
+O player chama draw() a cada quadro (umas 30 a 60 vezes por segundo):
+  p   o "pintor" (QPainter do Qt) já pronto para desenhar na área do visualizador
+  w   largura da área, em pixels
+  h   altura da área, em pixels
+  v   os dados do som e ferramentas:
+
+      v.bands     48 níveis de frequência, de 0 a 1 (graves primeiro, agudos por último)
+      v.wave      256 pontos da forma de onda, de -1 a 1
+      v.energy    volume geral, de 0 a 1
+      v.bass      força dos graves, de 0 a 1
+      v.beat      0 na maior parte do tempo; maior que 0 no quadro em que bate um grave forte
+      v.dt        segundos desde o quadro anterior (use para animações suaves)
+      v.time      segundos desde que o programa abriu
+      v.lcd       True quando a skin tem estilo "display LCD" (metal), False no vidro
+      v.colors    as 3 cores da skin (graves, médios, agudos)
+      v.color(t)  cor do degradê da skin; t = 0 é grave, t = 1 é agudo
+      v.state     um dicionário vazio para guardar o que precisa lembrar de um quadro
+                  para o outro (posição de partículas, por exemplo)
+      v.resample(valores, n)   transforma uma lista em outra com n pontos
+
+Exemplo mínimo (barras simples):
+
+    from PySide6.QtCore import QRectF
+
+    def draw(p, w, h, v):
+        n = 48
+        largura = w / n
+        for i in range(n):
+            altura = v.bands[i] * h
+            p.fillRect(QRectF(i * largura + 1, h - altura, largura - 2, altura), v.color(i / (n - 1)))
+
+Dicas
+  - Use v.color(...) em vez de cores fixas: assim o visualizador combina com
+    qualquer skin. (Se quiser cores fixas, também pode.)
+  - Desenhe só dentro de 0..w e 0..h.
+  - Mantenha leve: nada de ler arquivos, internet ou laços gigantes dentro de draw().
+    Se o desenho for lento, a música continua, mas o visual fica travado.
+  - Se draw() causar um erro, o player desliga o pacote, mostra o erro na barra de
+    estado e volta para "Barras". Assim um pacote com defeito não derruba o player.
+  - Para testar: instale a pasta ("De uma pasta..."), ative o pacote e escolha-o com as
+    setinhas. Depois de mudar o viz.py, instale de novo para substituir.
+
+Limites de um pacote de visualizador
+  - Tipos de arquivo: .py .json .png .txt .md
+  - No máximo 40 arquivos e 10 MB
+  - Pode usar PySide6 e numpy (já vêm com o player)
+
+
+VENDER OU COMPARTILHAR
+----------------------
+Skins (.rbbskin) e pacotes (.rbbviz) são arquivos únicos fáceis de enviar. Cada
+um traz id, autor e versão no próprio manifesto. Lembre de:
+  - usar só imagens, fontes e arte que você criou ou tem licença para distribuir;
+  - avisar nos pacotes de visualizador que eles executam código (veja "Segurança").

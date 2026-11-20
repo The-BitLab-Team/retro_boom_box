@@ -1,0 +1,10 @@
+# ambientes e arquivos gerados na montagem
+.venv/
+.venv-build/
+build/
+dist/
+instalador/
+__pycache__/
+*.pyc
+autoteste.txt
+erro.log

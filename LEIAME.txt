@@ -1,0 +1,104 @@
+RETRO BOOM BOX - versão 0.4.1
+============================
+
+DUAS FORMAS DE USAR
+A) Instalado como programa normal (recomendado)
+   Rode "criar-instalador.bat" (veja "COMO CRIAR O INSTALADOR" abaixo). Ele gera o
+   arquivo RetroBoomBox-Instalador-0.4.1.exe, que você instala com dois cliques e
+   passa para outras pessoas. Não precisa ter Python para usar o programa instalado.
+B) Direto da pasta, com Python
+   1. Instale o Python (3.10 até 3.13) em https://www.python.org/downloads/
+      Na primeira tela do instalador, marque "Add Python to PATH".
+   2. Dê dois cliques em  iniciar.bat
+      Na primeira vez ele baixa o que precisa (demora alguns minutos e precisa de internet).
+      Nas próximas vezes abre na hora.
+
+COMO USAR
+- Botão da pasta (canto direito do topo da lista):
+    Abrir arquivos...             toca arquivos soltos
+    Adicionar pasta à biblioteca  o programa escaneia a pasta e as subpastas
+    Escanear pastas agora         procura mídias novas nas pastas já escolhidas
+- Você também pode arrastar arquivos ou pastas para dentro da janela.
+- Botão "+" cria uma playlist. Clique com o botão direito numa música para
+  adicioná-la a uma playlist. Dentro de uma playlist, arraste as músicas para mudar a ordem.
+- Botão "..." tem renomear, excluir, exportar e importar playlists (formato M3U).
+- Setinhas embaixo do visor trocam o visualizador. Em "Configurações" (engrenagem)
+  dá para escolher o visualizador inicial, trocar a cada música, a sensibilidade e mais.
+- Botão do círculo meio preto/branco passa para a próxima skin instalada.
+- Vídeos aparecem no lugar do visualizador. Clique duas vezes no vídeo (ou F11) para tela cheia.
+- Clique com o botão direito na janela do player: menu rápido com equalizador,
+  modo mini, configurações e troca de skin.
+
+NOVIDADES DA VERSÃO 0.4.1
+- AVISO DE VERSÃO NOVA: o programa procura, em segundo plano e no máximo uma vez por dia,
+  se você publicou uma versão mais nova, e avisa com uma janelinha ("Baixar", "Lembrar depois",
+  "Ignorar esta versão"). Nada é baixado nem instalado sozinho. Dá para desligar ou procurar na
+  hora em Configurações > Sobre > Atualizações. ANTES de funcionar, você precisa dizer onde
+  publica as versões (uma vez só): veja o ATUALIZACOES.txt, que explica tudo passo a passo.
+- Console limpo: as mensagens em vermelho do FFmpeg (como "could not find any MFT") não aparecem
+  mais. Elas eram inofensivas. Para vê-las de novo, abra o programa com a variável de ambiente
+  RBB_FFMPEG_LOG=1.
+
+NOVIDADES DA VERSÃO 0.4
+- CAPA DO ÁLBUM: aparece no visor, ao lado do tempo, quando a música tem uma capa
+  nas tags (mp3, flac, m4a, ogg) ou quando a pasta tem cover.jpg, folder.png etc.
+  Dá para desligar em Configurações > Aparência.
+- EQUALIZADOR de 10 faixas (31 Hz a 16 kHz), com pré-amplificação, desenho da curva
+  e presets (Rock, Pop, Jazz, Clássica, Eletrônica, Vocal, Graves+...). Você também
+  pode salvar os seus. Abra com o botão de barrinhas, com Ctrl+E ou pelo clique direito.
+    * Marque "Equalizador ligado" para valer. Os ajustes valem na hora.
+    * Clique duas vezes numa barra para voltar a 0 dB.
+    * Vale para músicas. Vídeos tocam sem equalizador.
+    * Com ele ligado o som passa por um caminho próprio do programa. Se o seu
+      dispositivo de som não aceitar, o programa desliga o equalizador sozinho e avisa.
+- MODO MINI (Ctrl+M, botão da janelinha ou clique direito): uma barrinha compacta com
+  capa, título, tempo, barra de tempo e os controles. Funciona com todas as skins.
+
+SKINS E PACOTES
+- Skins mudam o visual inteiro do player: cores, botões e até o formato da janela.
+  Já vêm: Frutiger Aero e Metal escovado.
+- Em Configurações > "Skins e pacotes" você instala skins (.rbbskin) e pacotes de
+  visualizadores (.rbbviz), remove e escolhe qual usar.
+- Na pasta "exemplos" tem 3 skins (capsula-azul, capsula-verde, neon-roxo) e um
+  visualizador (chuva-neon) prontos para instalar e para servir de modelo.
+- Para CRIAR suas skins e visualizadores, leia o GUIA-DE-SKINS.txt.
+- ATENÇÃO: pacotes de visualizadores são pequenos programas. Por segurança ficam
+  desligados até você marcar a caixinha deles, e você deve ativar só os de quem confia.
+  Skins não têm esse risco.
+
+ATALHOS
+  Espaço .......... tocar / pausar
+  Ctrl + Setas ... faixa anterior / próxima
+  Alt + Setas .... voltar / avançar 5 segundos
+  Ctrl + Cima/Baixo  volume
+  Ctrl + E ........ equalizador
+  Ctrl + M ........ modo mini
+  F11 ............. vídeo em tela cheia
+  Ctrl + O ........ abrir arquivos
+  Ctrl + F ........ buscar na lista
+
+FORMATOS
+  Áudio: mp3, flac, wav, ogg, opus, m4a, aac, wma, aiff, mka
+  Vídeo: mp4, mkv, avi, mov, wmv, webm, m4v, mpg, mpeg, flv, 3gp
+
+COMO CRIAR O INSTALADOR (.exe)
+  1. Dê dois cliques em  criar-instalador.bat  (precisa do Python e de internet; na
+     primeira vez demora alguns minutos).
+  2. Ele monta o programa na pasta "dist\RetroBoomBox" e testa se abre e toca som.
+     Essa pasta já funciona sozinha: abra RetroBoomBox.exe.
+  3. Para gerar também o instalador de um arquivo só, instale antes o Inno Setup 6
+     (gratuito, https://jrsoftware.org/isdl.php) e rode o criar-instalador.bat de novo.
+     O instalador fica na pasta "instalador".
+  O instalador oferece atalho na Área de Trabalho e a entrada "Abrir com" para músicas
+  e vídeos. Desinstalar remove o programa, mas mantém a sua biblioteca, playlists e
+  skins (ficam em %APPDATA%\RetroBoomBox).
+
+ONDE FICAM SEUS DADOS
+  Pasta  %APPDATA%\RetroBoomBox  (biblioteca, playlists, configurações,
+  e as pastas "skins" e "visualizers" com o que você instalou).
+  Para recomeçar do zero, feche o programa e apague essa pasta.
+
+SE ALGO NÃO FUNCIONAR
+  Se o programa avisar de um erro inesperado, ou fechar sozinho, o detalhe fica no
+  arquivo  %APPDATA%\RetroBoomBox\erro.log  . Me envie esse arquivo.
+  Com o iniciar.bat, a mensagem também aparece na janela preta.

@@ -1,0 +1,9 @@
+{
+  "format": 1,
+  "id": "metal",
+  "name": "Metal escovado",
+  "author": "Retro Boom Box",
+  "version": "1.0",
+  "description": "Painel de alumínio com parafusos, botões em relevo e visor LCD verde.",
+  "base": "metal"
+}

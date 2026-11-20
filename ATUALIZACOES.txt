@@ -1,0 +1,87 @@
+COMO O PROGRAMA AVISA SOBRE VERSÕES NOVAS
+==========================================
+
+COMO FUNCIONA
+Quando o programa abre (no máximo uma vez por dia), ele olha uma página na internet, onde VOCÊ
+publica as versões. Se achar uma versão com número maior que a instalada, aparece uma janelinha:
+   Baixar ................. abre a página da versão no navegador, para baixar o instalador
+   Lembrar depois ......... avisa de novo outro dia
+   Ignorar esta versão .... não avisa mais dessa versão (avisa se sair uma ainda mais nova)
+- Nada é baixado nem instalado sozinho. A pessoa baixa o instalador e dá dois cliques.
+- O instalador novo atualiza por cima do antigo e mantém a biblioteca, as playlists e as skins.
+- Sem internet, não acontece nada (nenhum erro na tela).
+- Cada pessoa pode desligar em Configurações > Sobre > Atualizações, e o botão "Procurar agora"
+  mostra o resultado na hora.
+- Só vai um pedido comum de página, como quando você abre um site. Nenhum dado da pessoa é enviado
+  (o site de destino enxerga o endereço de internet dela, como em qualquer site).
+
+O QUE JÁ ESTÁ CONFIGURADO
+O programa procura as versões no repositório público do GitHub
+   https://github.com/The-BitLab-Team/retro_boom_box
+Esse endereço está na linha  GITHUB_REPO  do arquivo  app\updater.py  (formato usuario/repositorio).
+O repositório precisa continuar PÚBLICO: em repositório privado o programa não consegue ver nada.
+Para trocar de repositório (ou usar um site seu, veja mais abaixo), é só mudar essa linha e rodar
+o criar-instalador.bat de novo. Quem usa o programa pela pasta, com iniciar.bat, já fica valendo na hora.
+Se a linha ficar vazia, o programa não procura nada sozinho, e o botão "Procurar agora" avisa
+que ainda não foi configurado.
+
+COMO PUBLICAR UMA VERSÃO NOVA (toda vez que você lançar uma)
+ 1. Aumente o número em  app\__init__.py :
+        __version__ = "0.5.0"
+    Use sempre três números separados por ponto, e sempre maior que o anterior
+    (0.4.1 -> 0.4.2 -> 0.5.0 ...). O 0.10.0 vem depois do 0.9.0.
+ 2. Rode o criar-instalador.bat. Ele gera  instalador\RetroBoomBox-Instalador-0.5.0.exe
+    (o número do nome do arquivo vem do __init__.py sozinho).
+ 3. No GitHub, abra o repositório (link acima) e clique em "Releases" (no lado direito da página),
+    depois em "Create a new release" (ou "Draft a new release").
+ 4. Em "Choose a tag" digite  v0.5.0  (a letra v e o mesmo número do __init__.py) e confirme
+    "Create new tag".
+ 5. Em título escreva, por exemplo,  Retro Boom Box 0.5.0
+    Na descrição escreva o que mudou, em frases curtas. Esse texto aparece no aviso do
+    programa, em "O que mudou".
+ 6. Arraste o RetroBoomBox-Instalador-0.5.0.exe para a área de anexos da página.
+ 7. Deixe marcado "Set as the latest release". NÃO marque "pre-release": versões de teste
+    (pre-release), rascunhos e números como 0.5.0-beta nunca são anunciados.
+ 8. Clique em "Publish release". Pronto!
+Quem já tem o programa vai ver o aviso na próxima vez que abrir (no máximo em um dia, ou na hora
+em Configurações > Sobre > Atualizações > "Procurar agora").
+
+COMO TESTAR
+Com o programa 0.4.1 instalado:
+ - Publique uma versão com a tag v0.4.1: o botão "Procurar agora" deve dizer
+   "Você está usando a versão mais recente".
+ - Depois publique uma v0.4.2 (pode ser só um teste, com qualquer arquivo): o programa deve
+   mostrar a janelinha "Nova versão disponível".
+Se ainda não saiu nenhuma versão, a mensagem é "Nenhuma versão foi encontrada...": é normal até
+você publicar a primeira.
+
+SEM GITHUB: USANDO O SEU PRÓPRIO SITE
+Se preferir hospedar num site seu, crie um arquivo de texto chamado  versao.json  com isto:
+
+    {
+      "version": "0.5.0",
+      "url": "https://seusite.com.br/retro-boom-box/baixar",
+      "notes": "O que mudou nesta versão, em poucas linhas."
+    }
+
+Coloque o arquivo no site e, em app\updater.py, preencha a linha  JSON_URL  com o endereço dele
+(precisa começar com https://):
+    JSON_URL = "https://seusite.com.br/retro-boom-box/versao.json"
+Deixe GITHUB_REPO vazio. A cada versão nova, é só editar o versao.json (version, url e notes).
+O "url" é a página para onde o botão Baixar leva (precisa começar com https://).
+
+MENSAGENS QUE O PROGRAMA PODE MOSTRAR
+ "ainda não foi configurada" ....... a linha GITHUB_REPO (ou JSON_URL) está vazia ou escrita
+                                     errada. O formato certo é  usuario/repositorio.
+ "Nenhuma versão foi encontrada" ... o repositório não existe, é privado, ou ainda não tem
+                                     nenhuma versão publicada em "Releases".
+ "pediu para esperar" .............. o GitHub limita as consultas (cerca de 60 por hora por
+                                     internet). Tente de novo mais tarde.
+ "A resposta do servidor não foi entendida" ... a página respondeu algo diferente do esperado
+                                     (por exemplo, a tag não é um número como v0.5.0, ou o
+                                     versao.json tem um erro de escrita).
+ "Não foi possível verificar agora" ... sem internet, ou o servidor não respondeu a tempo.
+
+PARA QUEM ESTÁ TESTANDO O PRÓPRIO PROGRAMA
+ Variável de ambiente RBB_UPDATE_URL: troca o endereço consultado só naquela execução (útil
+ para testes). Variável RBB_FFMPEG_LOG=1: mostra de novo as mensagens do FFmpeg no console.

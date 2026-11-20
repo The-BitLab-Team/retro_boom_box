@@ -1,0 +1,31 @@
+{
+  "format": 1,
+  "id": "neon-roxo",
+  "name": "Neon Roxo",
+  "author": "Retro Boom Box",
+  "version": "1.0",
+  "description": "Exemplo de skin mínima: só um arquivo skin.json trocando as cores do metal escovado.",
+  "base": "metal",
+  "theme": {
+    "lcd_top": "#14061f",
+    "lcd_bottom": "#0b0314",
+    "lcd_border": "#6a4a8c",
+    "lcd_text": "#ff7bf0",
+    "lcd_dim": "#a64ea0",
+    "list_bg": "#12081c",
+    "list_text": "#e68cff",
+    "list_dim": "#8a4f9e",
+    "list_sel_top": "#3a1a52",
+    "list_sel_bottom": "#2a1240",
+    "list_sel_text": "#ffd0ff",
+    "list_border": "#6a4a8c",
+    "accent": "#d65cff",
+    "viz_colors": [
+      "#ff7bf0",
+      "#b46bff",
+      "#5c8bff"
+    ],
+    "fill_a": "#ffb0f6",
+    "fill_b": "#b43fd6"
+  }
+}

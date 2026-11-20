@@ -1,0 +1,14 @@
+# Arquivos de texto do Windows ficam com quebra de linha do Windows (CRLF) ao baixar
+*.bat text eol=crlf
+*.txt text eol=crlf
+*.iss text eol=crlf
+*.spec text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Arquivos que não são texto
+*.png binary
+*.ico binary
+*.rbbskin binary
+*.rbbviz binary
