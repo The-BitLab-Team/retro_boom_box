@@ -1,10 +1,10 @@
-RETRO BOOM BOX - versão 0.4.1
+RETRO BOOM BOX - versão 0.5.0
 ============================
 
 DUAS FORMAS DE USAR
 A) Instalado como programa normal (recomendado)
    Rode "criar-instalador.bat" (veja "COMO CRIAR O INSTALADOR" abaixo). Ele gera o
-   arquivo RetroBoomBox-Instalador-0.4.1.exe, que você instala com dois cliques e
+   arquivo RetroBoomBox-Instalador-0.5.0.exe, que você instala com dois cliques e
    passa para outras pessoas. Não precisa ter Python para usar o programa instalado.
 B) Direto da pasta, com Python
    1. Instale o Python (3.10 até 3.13) em https://www.python.org/downloads/
@@ -28,6 +28,18 @@ COMO USAR
 - Vídeos aparecem no lugar do visualizador. Clique duas vezes no vídeo (ou F11) para tela cheia.
 - Clique com o botão direito na janela do player: menu rápido com equalizador,
   modo mini, configurações e troca de skin.
+
+NOVIDADES DA VERSÃO 0.5.0
+- QUATRO SKINS NOVAS, já dentro do programa (nada para instalar), inspiradas nos anos 2000:
+    Gota Aqua ........... gel azul, listras finas e bolinhas coloridas (estilo Aqua)
+    Bolha Translúcida ... plástico azul que deixa ver as peças por dentro (estilo Y2K)
+    Carbono Hi-Fi ....... fibra de carbono, cromo e visor âmbar (aparelho de som de rack)
+    Cromo Líquido ....... cromo espelhado, roxo e luz neon (futurismo do ano 2000)
+  Todas têm modo mini com desenho próprio. Para trocar: botão meio preto e branco do topo
+  da janela, ou Configurações > Skins e pacotes.
+- LICENÇA: o programa agora usa a PolyForm Noncommercial 1.0.0. Resumo: pode usar, modificar e
+  compartilhar de graça, mantendo o aviso e o endereço do projeto original; vender ou usar para
+  ganhar dinheiro não é permitido. Veja o arquivo LICENSE e a seção "LICENÇA" abaixo.
 
 NOVIDADES DA VERSÃO 0.4.1
 - AVISO DE VERSÃO NOVA: o programa procura, em segundo plano e no máximo uma vez por dia,
@@ -56,7 +68,8 @@ NOVIDADES DA VERSÃO 0.4
 
 SKINS E PACOTES
 - Skins mudam o visual inteiro do player: cores, botões e até o formato da janela.
-  Já vêm: Frutiger Aero e Metal escovado.
+  Já vêm seis: Frutiger Aero, Metal escovado, Gota Aqua, Bolha Translúcida, Carbono Hi-Fi
+  e Cromo Líquido.
 - Em Configurações > "Skins e pacotes" você instala skins (.rbbskin) e pacotes de
   visualizadores (.rbbviz), remove e escolhe qual usar.
 - Na pasta "exemplos" tem 3 skins (capsula-azul, capsula-verde, neon-roxo) e um
@@ -65,6 +78,19 @@ SKINS E PACOTES
 - ATENÇÃO: pacotes de visualizadores são pequenos programas. Por segurança ficam
   desligados até você marcar a caixinha deles, e você deve ativar só os de quem confia.
   Skins não têm esse risco.
+
+LICENÇA (PolyForm Noncommercial 1.0.0)
+  Texto oficial: arquivo LICENSE (em inglês; também em Configurações > Sobre > "Ler a licença").
+  Projeto original: https://github.com/The-BitLab-Team/retro_boom_box
+  Em palavras simples (isto é um resumo, vale o texto oficial):
+    PODE   usar, estudar e modificar o programa; passar cópias (com ou sem modificações)
+           para outras pessoas de graça; usar em casa, em estudos, em projetos sem fins lucrativos.
+    DEVE   manter o arquivo LICENSE e a linha "Required Notice" (que aponta para o projeto
+           original) em toda cópia que passar adiante.
+    NÃO PODE  vender o programa ou versões modificadas, cobrar pela distribuição, nem usá-lo
+           dentro de uma empresa para fins comerciais.
+  Quem criou o programa pode combinar outras condições (por exemplo, vender skins próprias).
+  Skins e pacotes feitos por outras pessoas continuam sendo obra de quem os fez.
 
 ATALHOS
   Espaço .......... tocar / pausar

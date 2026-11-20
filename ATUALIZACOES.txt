@@ -27,30 +27,30 @@ que ainda não foi configurado.
 
 COMO PUBLICAR UMA VERSÃO NOVA (toda vez que você lançar uma)
  1. Aumente o número em  app\__init__.py :
-        __version__ = "0.5.0"
+        __version__ = "0.6.0"
     Use sempre três números separados por ponto, e sempre maior que o anterior
-    (0.4.1 -> 0.4.2 -> 0.5.0 ...). O 0.10.0 vem depois do 0.9.0.
- 2. Rode o criar-instalador.bat. Ele gera  instalador\RetroBoomBox-Instalador-0.5.0.exe
+    (0.5.0 -> 0.5.1 -> 0.6.0 ...). O 0.10.0 vem depois do 0.9.0.
+ 2. Rode o criar-instalador.bat. Ele gera  instalador\RetroBoomBox-Instalador-0.6.0.exe
     (o número do nome do arquivo vem do __init__.py sozinho).
  3. No GitHub, abra o repositório (link acima) e clique em "Releases" (no lado direito da página),
     depois em "Create a new release" (ou "Draft a new release").
- 4. Em "Choose a tag" digite  v0.5.0  (a letra v e o mesmo número do __init__.py) e confirme
+ 4. Em "Choose a tag" digite  v0.6.0  (a letra v e o mesmo número do __init__.py) e confirme
     "Create new tag".
- 5. Em título escreva, por exemplo,  Retro Boom Box 0.5.0
+ 5. Em título escreva, por exemplo,  Retro Boom Box 0.6.0
     Na descrição escreva o que mudou, em frases curtas. Esse texto aparece no aviso do
     programa, em "O que mudou".
- 6. Arraste o RetroBoomBox-Instalador-0.5.0.exe para a área de anexos da página.
+ 6. Arraste o RetroBoomBox-Instalador-0.6.0.exe para a área de anexos da página.
  7. Deixe marcado "Set as the latest release". NÃO marque "pre-release": versões de teste
-    (pre-release), rascunhos e números como 0.5.0-beta nunca são anunciados.
+    (pre-release), rascunhos e números como 0.6.0-beta nunca são anunciados.
  8. Clique em "Publish release". Pronto!
 Quem já tem o programa vai ver o aviso na próxima vez que abrir (no máximo em um dia, ou na hora
 em Configurações > Sobre > Atualizações > "Procurar agora").
 
 COMO TESTAR
-Com o programa 0.4.1 instalado:
- - Publique uma versão com a tag v0.4.1: o botão "Procurar agora" deve dizer
+Com o programa 0.5.0 instalado:
+ - Publique uma versão com a tag v0.5.0: o botão "Procurar agora" deve dizer
    "Você está usando a versão mais recente".
- - Depois publique uma v0.4.2 (pode ser só um teste, com qualquer arquivo): o programa deve
+ - Depois publique uma v0.5.1 (pode ser só um teste, com qualquer arquivo): o programa deve
    mostrar a janelinha "Nova versão disponível".
 Se ainda não saiu nenhuma versão, a mensagem é "Nenhuma versão foi encontrada...": é normal até
 você publicar a primeira.
@@ -59,7 +59,7 @@ SEM GITHUB: USANDO O SEU PRÓPRIO SITE
 Se preferir hospedar num site seu, crie um arquivo de texto chamado  versao.json  com isto:
 
     {
-      "version": "0.5.0",
+      "version": "0.6.0",
       "url": "https://seusite.com.br/retro-boom-box/baixar",
       "notes": "O que mudou nesta versão, em poucas linhas."
     }
@@ -78,7 +78,7 @@ MENSAGENS QUE O PROGRAMA PODE MOSTRAR
  "pediu para esperar" .............. o GitHub limita as consultas (cerca de 60 por hora por
                                      internet). Tente de novo mais tarde.
  "A resposta do servidor não foi entendida" ... a página respondeu algo diferente do esperado
-                                     (por exemplo, a tag não é um número como v0.5.0, ou o
+                                     (por exemplo, a tag não é um número como v0.6.0, ou o
                                      versao.json tem um erro de escrita).
  "Não foi possível verificar agora" ... sem internet, ou o servidor não respondeu a tempo.
 

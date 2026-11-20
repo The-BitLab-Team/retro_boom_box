@@ -1,0 +1,353 @@
+{
+  "format": 1,
+  "id": "bolha-translucida",
+  "name": "Bolha Translúcida",
+  "author": "Retro Boom Box",
+  "version": "1.0",
+  "description": "Plástico azul translúcido com as peças aparecendo por dentro e botões que parecem balas de goma: o visual dos gadgets de 1999 e 2000.",
+  "base": "aero",
+  "theme": {
+    "font": "Trebuchet MS",
+    "text": "#042f45",
+    "text_dim": "#06465f",
+    "glyph": "#06506b",
+    "accent": "#ff8a1f",
+    "lcd_top": "#2f80ee",
+    "lcd_bottom": "#0b3a9f",
+    "lcd_border": "#e3f8ff",
+    "lcd_text": "#e8f7ff",
+    "lcd_dim": "#c4e2ff",
+    "list_bg": "#eafcff",
+    "list_text": "#04465f",
+    "list_dim": "#37879f",
+    "list_sel_top": "#ffffff",
+    "list_sel_bottom": "#9fe6f7",
+    "list_sel_text": "#03405a",
+    "list_border": "#7fd0e6",
+    "dialog_bg": "#dcf6fd",
+    "dialog_text": "#05465f",
+    "field_bg": "#ffffff",
+    "field_border": "#6cc6df",
+    "btn_top": "#ffffff",
+    "btn_mid": "#c9f4ff",
+    "btn_low": "#6fd9f3",
+    "btn_end": "#c2f2fd",
+    "btn_border": "#2aa6c8",
+    "play_light": "#ffe0a8",
+    "play_mid": "#ff9a26",
+    "play_dark": "#c14c00",
+    "groove_a": "#075477",
+    "groove_b": "#45bfe3",
+    "fill_a": "#ffd490",
+    "fill_b": "#ff8a1f",
+    "knob_a": "#ffffff",
+    "knob_b": "#a8e8f7",
+    "viz_colors": [
+      "#6af5c6",
+      "#74ccff",
+      "#f1faff"
+    ]
+  },
+  "body": "body.png",
+  "layout": {
+    "window": [
+      1020,
+      730
+    ],
+    "buttons": {
+      "close": [
+        878,
+        66,
+        26,
+        26
+      ],
+      "min": [
+        846,
+        66,
+        26,
+        26
+      ],
+      "mini": [
+        814,
+        66,
+        26,
+        26
+      ],
+      "gear": [
+        782,
+        66,
+        26,
+        26
+      ],
+      "theme": [
+        750,
+        66,
+        26,
+        26
+      ],
+      "left": [
+        98,
+        514,
+        26,
+        26
+      ],
+      "video": [
+        540,
+        514,
+        26,
+        26
+      ],
+      "right": [
+        510,
+        514,
+        26,
+        26
+      ],
+      "folder": [
+        912,
+        98,
+        30,
+        30
+      ],
+      "dots": [
+        876,
+        98,
+        30,
+        30
+      ],
+      "plus": [
+        840,
+        98,
+        30,
+        30
+      ],
+      "shuffle": [
+        357,
+        621,
+        30,
+        30
+      ],
+      "prev": [
+        397,
+        614,
+        44,
+        44
+      ],
+      "play": [
+        451,
+        604,
+        64,
+        64
+      ],
+      "stop": [
+        525,
+        614,
+        44,
+        44
+      ],
+      "next": [
+        579,
+        614,
+        44,
+        44
+      ],
+      "repeat": [
+        633,
+        621,
+        30,
+        30
+      ],
+      "mute": [
+        752,
+        621,
+        30,
+        30
+      ],
+      "eq": [
+        712,
+        621,
+        30,
+        30
+      ]
+    },
+    "logo": [
+      116,
+      66,
+      300,
+      26
+    ],
+    "lcd": [
+      78,
+      96,
+      508,
+      456
+    ],
+    "info": [
+      98,
+      110,
+      468,
+      124
+    ],
+    "stage": [
+      98,
+      242,
+      468,
+      264
+    ],
+    "viz_label": [
+      128,
+      514,
+      378,
+      26
+    ],
+    "source": [
+      602,
+      96,
+      232,
+      34
+    ],
+    "search": [
+      602,
+      138,
+      340,
+      32
+    ],
+    "status": [
+      602,
+      516,
+      340,
+      36
+    ],
+    "list": [
+      602,
+      178,
+      340,
+      330
+    ],
+    "seek": [
+      78,
+      564,
+      864,
+      28
+    ],
+    "volume": [
+      792,
+      622,
+      150,
+      28
+    ]
+  },
+  "mini": {
+    "body": "mini.png",
+    "layout": {
+      "window": [
+        640,
+        184
+      ],
+      "buttons": {
+        "close": [
+          570,
+          30,
+          26,
+          26
+        ],
+        "min": [
+          538,
+          30,
+          26,
+          26
+        ],
+        "mini": [
+          506,
+          30,
+          26,
+          26
+        ],
+        "eq": [
+          474,
+          30,
+          26,
+          26
+        ],
+        "gear": [
+          442,
+          30,
+          26,
+          26
+        ],
+        "shuffle": [
+          44,
+          125,
+          30,
+          30
+        ],
+        "prev": [
+          82,
+          123,
+          34,
+          34
+        ],
+        "play": [
+          124,
+          118,
+          44,
+          44
+        ],
+        "stop": [
+          176,
+          123,
+          34,
+          34
+        ],
+        "next": [
+          218,
+          123,
+          34,
+          34
+        ],
+        "repeat": [
+          260,
+          125,
+          30,
+          30
+        ],
+        "mute": [
+          426,
+          125,
+          30,
+          30
+        ]
+      },
+      "lcd": [
+        36,
+        26,
+        398,
+        62
+      ],
+      "info": [
+        46,
+        30,
+        378,
+        54
+      ],
+      "seek": [
+        44,
+        94,
+        552,
+        22
+      ],
+      "stage": [
+        306,
+        120,
+        112,
+        40
+      ],
+      "volume": [
+        462,
+        126,
+        134,
+        28
+      ]
+    }
+  }
+}

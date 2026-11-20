@@ -23,6 +23,10 @@ PARTE 1 - INSTALAR (para quem só quer usar)
    Os visualizadores ativados aparecem nas setinhas embaixo do visor.
 5. Os exemplos que acompanham o programa estão na pasta "exemplos".
    Teste instalando "capsula-azul.rbbskin" e "chuva-neon.rbbviz".
+   As seis skins que já vêm no programa (Frutiger Aero, Metal escovado, Gota Aqua, Bolha
+   Translúcida, Carbono Hi-Fi e Cromo Líquido) ficam na pasta app\builtin_skins do código-fonte.
+   Gota Aqua, Bolha, Carbono e Cromo usam imagens de botões e corpo próprios e servem de
+   modelo completo (corpo, modo mini e botões play/pause com imagens).
 
 Atalho: o botão do círculo meio preto/branco, no topo do player, passa para a
 próxima skin instalada.

@@ -4,8 +4,9 @@ from PySide6.QtGui import QDesktopServices
 from PySide6.QtWidgets import (QCheckBox, QComboBox, QDialog, QFileDialog, QHBoxLayout, QLabel, QListWidget,
                                QListWidgetItem, QMessageBox, QPushButton, QSlider, QTabWidget, QVBoxLayout, QWidget)
 
-from . import __version__
+from . import LICENSE_NAME, REPO_URL, __version__
 from .library import AUDIO_EXTS, VIDEO_EXTS
+from .license_dialog import LicenseDialog
 from .packs import PackError
 
 TAB_LIBRARY = 3
@@ -17,7 +18,7 @@ class SettingsDialog(QDialog):
         self.main = main
         self.s = main.settings
         self.setWindowTitle("Configurações")
-        self.setMinimumSize(580, 560)
+        self.setMinimumSize(580, 600)
         self.setWindowFlag(Qt.WindowType.WindowContextHelpButtonHint, False)
 
         root = QVBoxLayout(self)
@@ -202,6 +203,20 @@ class SettingsDialog(QDialog):
         lay.addWidget(self._dim("Só consulta a página das versões. Nada é baixado nem instalado sozinho, "
                                 "e nenhum dado seu é enviado."))
         self.main.updateStatus.connect(self._on_update_status)
+        lay.addSpacing(8)
+        lay.addWidget(self._bold("Licença e projeto"))
+        lay.addWidget(self._dim(f"{LICENSE_NAME}: use, modifique e compartilhe de graça, mantendo o aviso do "
+                                "projeto original. Venda e uso comercial não são permitidos."))
+        row2 = QHBoxLayout()
+        self.lic_btn = QPushButton("Ler a licença")
+        self.lic_btn.clicked.connect(lambda: LicenseDialog(self).exec())
+        self.repo_btn = QPushButton("Abrir o projeto original")
+        self.repo_btn.clicked.connect(lambda: QDesktopServices.openUrl(QUrl(REPO_URL)))
+        row2.addWidget(self.lic_btn)
+        row2.addWidget(self.repo_btn)
+        row2.addStretch()
+        lay.addLayout(row2)
+        lay.addWidget(self._dim(REPO_URL))
         lay.addStretch()
         return w
 

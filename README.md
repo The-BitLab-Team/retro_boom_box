@@ -1,19 +1,24 @@
 # Retro Boom Box
 
 Um player de músicas e vídeos com a cara dos anos 90 e 2000. O visual muda por **skins**
-(já vêm Frutiger Aero e Metal escovado) e os visualizadores podem ser expandidos com **pacotes**.
+(já vêm seis: Frutiger Aero, Metal escovado, Gota Aqua, Bolha Translúcida, Carbono Hi-Fi e Cromo Líquido) e os visualizadores podem ser expandidos com **pacotes**.
 Feito em Python com PySide6 (Qt). Inspirado no estilo do Windows Media Player e do Winamp,
 com arte original.
 
 ![Frutiger Aero](docs/capturas/s4_capa_aero.png)
 ![Metal escovado](docs/capturas/s4_capa_metal.png)
 
+As quatro skins mais novas, inspiradas nos anos 2000 (gel Aqua, plástico translúcido, fibra de carbono com visor âmbar e cromo neon):
+
+![Gota Aqua, Bolha Translúcida, Carbono Hi-Fi e Cromo Líquido](docs/capturas/s5_novas_skins.png)
+![Modo mini das quatro skins novas](docs/capturas/s5_novos_minis.png)
+
 ## O que tem
 
 - Toca músicas (mp3, flac, wav, ogg, opus, m4a, aac, wma, aiff, mka) e vídeos (mp4, mkv, avi, mov, wmv, webm e outros)
 - Biblioteca com pastas escaneadas, playlists (importar e exportar M3U), arrastar e soltar
 - 8 visualizadores que reagem ao som de verdade, mais pacotes de visualizadores (`.rbbviz`)
-- Skins que mudam o visual inteiro, até o formato da janela (`.rbbskin`)
+- Seis skins que já vêm no programa e suporte a skins de outras pessoas, que mudam o visual inteiro, até o formato da janela (`.rbbskin`)
 - Capa do álbum, equalizador de 10 faixas com presets, modo mini
 - Aviso de versão nova (procura em [Releases](../../releases), sem baixar nada sozinho)
 
@@ -39,6 +44,21 @@ o [Inno Setup 6](https://jrsoftware.org/isdl.php) é opcional, só para o arquiv
 | `GUIA-DE-SKINS.txt` | Como criar skins e pacotes de visualizadores |
 | `ATUALIZACOES.txt` | Como publicar versões novas e como funciona o aviso de atualização |
 | `exemplos/` | 3 skins e 1 visualizador prontos para instalar e servir de modelo |
+
+## Licença
+
+O código e a arte do programa usam a licença **[PolyForm Noncommercial 1.0.0](LICENSE)**.
+O texto oficial é o do arquivo [`LICENSE`](LICENSE), em inglês. O resumo abaixo é só para ajudar
+(não é aconselhamento jurídico).
+
+| Pode | Deve | Não pode |
+| --- | --- | --- |
+| Usar, estudar e modificar o programa. Passar cópias, com ou sem modificações, para outras pessoas de graça. Usar em casa, em estudos e em projetos sem fins lucrativos. | Manter o arquivo `LICENSE` e a linha `Required Notice`, que aponta para este repositório, em toda cópia que passar adiante. | Vender o programa ou versões modificadas, cobrar pela distribuição ou usar o programa em uma empresa com fins comerciais. |
+
+Em resumo: quem fizer uma versão própria precisa continuar citando este projeto original
+(<https://github.com/The-BitLab-Team/retro_boom_box>) e não pode vender o resultado.
+Quem quiser uma condição diferente (por exemplo, uso comercial) deve combinar com os autores.
+Skins e pacotes feitos por outras pessoas continuam sendo obra de quem os fez.
 
 ## Segurança dos pacotes
 

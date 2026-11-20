@@ -17,6 +17,7 @@ a = Analysis(
     datas=[
         ("app/builtin_skins", "app/builtin_skins"),
         ("app/assets", "app/assets"),
+        ("LICENSE", "."),
     ],
     hiddenimports=PARA_PACOTES + ["mutagen.mp3", "mutagen.flac", "mutagen.mp4", "mutagen.oggvorbis",
                                    "mutagen.oggopus", "mutagen.asf", "mutagen.wave", "mutagen.aiff"],

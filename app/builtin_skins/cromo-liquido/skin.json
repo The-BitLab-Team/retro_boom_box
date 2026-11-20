@@ -1,0 +1,353 @@
+{
+  "format": 1,
+  "id": "cromo-liquido",
+  "name": "Cromo Líquido",
+  "author": "Retro Boom Box",
+  "version": "1.0",
+  "description": "Cromo espelhado, roxo profundo e luzes neon: o futurismo do ano 2000, com estrelinhas e tudo.",
+  "base": "aero",
+  "theme": {
+    "font": "Verdana",
+    "text": "#eaf0ff",
+    "text_dim": "#b4c0f2",
+    "glyph": "#141b4e",
+    "accent": "#ff4fd8",
+    "lcd_top": "#0c1d46",
+    "lcd_bottom": "#050c26",
+    "lcd_border": "#7f93c8",
+    "lcd_text": "#7bf8ff",
+    "lcd_dim": "#a3b2f4",
+    "list_bg": "#0d1236",
+    "list_text": "#c4ecff",
+    "list_dim": "#98a6e6",
+    "list_sel_top": "#f1e9ff",
+    "list_sel_bottom": "#b9a0f4",
+    "list_sel_text": "#1a1050",
+    "list_border": "#5160b4",
+    "dialog_bg": "#1b2050",
+    "dialog_text": "#e8eeff",
+    "field_bg": "#0f1438",
+    "field_border": "#5869be",
+    "btn_top": "#ffffff",
+    "btn_mid": "#d3dcf4",
+    "btn_low": "#8997c8",
+    "btn_end": "#e2e8fa",
+    "btn_border": "#222a5c",
+    "play_light": "#ffb6f2",
+    "play_mid": "#e332c2",
+    "play_dark": "#5c0b70",
+    "groove_a": "#060a26",
+    "groove_b": "#2c3774",
+    "fill_a": "#86fbff",
+    "fill_b": "#b24fff",
+    "knob_a": "#ffffff",
+    "knob_b": "#8c99cc",
+    "viz_colors": [
+      "#74f8ff",
+      "#b46bff",
+      "#ff4fd8"
+    ]
+  },
+  "body": "body.png",
+  "layout": {
+    "window": [
+      1020,
+      730
+    ],
+    "buttons": {
+      "close": [
+        882,
+        62,
+        26,
+        26
+      ],
+      "min": [
+        850,
+        62,
+        26,
+        26
+      ],
+      "mini": [
+        818,
+        62,
+        26,
+        26
+      ],
+      "gear": [
+        786,
+        62,
+        26,
+        26
+      ],
+      "theme": [
+        754,
+        62,
+        26,
+        26
+      ],
+      "left": [
+        98,
+        514,
+        26,
+        26
+      ],
+      "video": [
+        540,
+        514,
+        26,
+        26
+      ],
+      "right": [
+        510,
+        514,
+        26,
+        26
+      ],
+      "folder": [
+        912,
+        98,
+        30,
+        30
+      ],
+      "dots": [
+        876,
+        98,
+        30,
+        30
+      ],
+      "plus": [
+        840,
+        98,
+        30,
+        30
+      ],
+      "shuffle": [
+        357,
+        621,
+        30,
+        30
+      ],
+      "prev": [
+        397,
+        614,
+        44,
+        44
+      ],
+      "play": [
+        451,
+        604,
+        64,
+        64
+      ],
+      "stop": [
+        525,
+        614,
+        44,
+        44
+      ],
+      "next": [
+        579,
+        614,
+        44,
+        44
+      ],
+      "repeat": [
+        633,
+        621,
+        30,
+        30
+      ],
+      "mute": [
+        752,
+        621,
+        30,
+        30
+      ],
+      "eq": [
+        712,
+        621,
+        30,
+        30
+      ]
+    },
+    "logo": [
+      104,
+      62,
+      300,
+      26
+    ],
+    "lcd": [
+      78,
+      96,
+      508,
+      456
+    ],
+    "info": [
+      98,
+      110,
+      468,
+      124
+    ],
+    "stage": [
+      98,
+      242,
+      468,
+      264
+    ],
+    "viz_label": [
+      128,
+      514,
+      378,
+      26
+    ],
+    "source": [
+      602,
+      96,
+      232,
+      34
+    ],
+    "search": [
+      602,
+      138,
+      340,
+      32
+    ],
+    "status": [
+      602,
+      516,
+      340,
+      36
+    ],
+    "list": [
+      602,
+      178,
+      340,
+      330
+    ],
+    "seek": [
+      78,
+      564,
+      864,
+      28
+    ],
+    "volume": [
+      792,
+      622,
+      150,
+      28
+    ]
+  },
+  "mini": {
+    "body": "mini.png",
+    "layout": {
+      "window": [
+        640,
+        184
+      ],
+      "buttons": {
+        "close": [
+          570,
+          30,
+          26,
+          26
+        ],
+        "min": [
+          538,
+          30,
+          26,
+          26
+        ],
+        "mini": [
+          506,
+          30,
+          26,
+          26
+        ],
+        "eq": [
+          474,
+          30,
+          26,
+          26
+        ],
+        "gear": [
+          442,
+          30,
+          26,
+          26
+        ],
+        "shuffle": [
+          44,
+          125,
+          30,
+          30
+        ],
+        "prev": [
+          82,
+          123,
+          34,
+          34
+        ],
+        "play": [
+          124,
+          118,
+          44,
+          44
+        ],
+        "stop": [
+          176,
+          123,
+          34,
+          34
+        ],
+        "next": [
+          218,
+          123,
+          34,
+          34
+        ],
+        "repeat": [
+          260,
+          125,
+          30,
+          30
+        ],
+        "mute": [
+          426,
+          125,
+          30,
+          30
+        ]
+      },
+      "lcd": [
+        36,
+        26,
+        398,
+        62
+      ],
+      "info": [
+        46,
+        30,
+        378,
+        54
+      ],
+      "seek": [
+        44,
+        94,
+        552,
+        22
+      ],
+      "stage": [
+        306,
+        120,
+        112,
+        40
+      ],
+      "volume": [
+        462,
+        126,
+        134,
+        28
+      ]
+    }
+  }
+}

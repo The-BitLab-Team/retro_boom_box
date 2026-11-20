@@ -2,7 +2,7 @@
 ; Não precisa abrir este arquivo: o criar-instalador.bat usa ele sozinho.
 #define NomeApp "Retro Boom Box"
 #ifndef Versao
-#define Versao "0.4.1"
+#define Versao "0.5.0"
 #endif
 
 [Setup]
@@ -36,6 +36,7 @@ Source: "dist\RetroBoomBox\*"; DestDir: "{app}"; Flags: recursesubdirs createall
 Source: "exemplos\*"; DestDir: "{app}\exemplos"; Flags: recursesubdirs createallsubdirs ignoreversion
 Source: "GUIA-DE-SKINS.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "LEIAME.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "LICENSE"; DestDir: "{app}"; DestName: "LICENSE.txt"; Flags: ignoreversion
 
 [Icons]
 Name: "{autoprograms}\Retro Boom Box"; Filename: "{app}\RetroBoomBox.exe"

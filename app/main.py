@@ -134,6 +134,10 @@ def _selftest(window):
     note(f"busca de versões: {'configurada' if updater.configured_url() else 'ainda sem endereço'}; "
          f"https: {https}; comparação 0.10.0 > 0.9.9: {updater.is_newer('v0.10.0', '0.9.9')}",
          updater.is_newer("v0.10.0", "0.9.9") and not updater.is_newer("0.9", "0.9.0"))
+    from .license_dialog import license_text
+    lic = license_text() or ""
+    note(f"licença: arquivo LICENSE encontrado ({len(lic)} caracteres, com o aviso do projeto original: "
+         f"{'Required Notice' in lic and 'retro_boom_box' in lic})", "Required Notice" in lic and "retro_boom_box" in lic)
     eq = EqProcessor(44100)
     eq.set_gains([3] * 10, 0)
     out = eq.process(np.random.default_rng(1).standard_normal((20000, 2)).astype(np.float32) * 0.1)
