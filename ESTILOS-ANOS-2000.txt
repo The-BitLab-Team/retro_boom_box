@@ -1,0 +1,87 @@
+O QUE TORNAVA AS INTERFACES DOS ANOS 2000 TÃO MARCANTES
+=========================================================
+(e como isso virou as skins novas do Retro Boom Box)
+
+Por volta de 2000 a 2008 os computadores ganharam placas de vídeo melhores e telas
+com milhões de cores. Pela primeira vez os programas podiam ter degradês, brilho,
+sombra e transparência sem ficar lentos. Os designers aproveitaram tudo isso ao
+máximo. Estas são as ideias que mais marcaram a época:
+
+1. Objetos que parecem de verdade (skeuomorfismo)
+   Botões pareciam balas de gel, vidro, plástico ou metal. Tinham volume: luz em
+   cima, sombra embaixo, reflexo brilhante. A pessoa "entendia" o botão porque
+   ele parecia algo que dá para apertar.
+
+2. O reflexo brilhante ("glossy")
+   Quase tudo tinha uma faixa branca de brilho na metade de cima, como se uma
+   lâmpada estivesse refletindo. Na fase "Web 2.0" (2005-2008) veio também o
+   reflexo no "chão", embaixo dos objetos.
+
+3. Plástico colorido e translúcido
+   Computadores e aparelhos em plástico colorido meio transparente, deixando ver
+   as peças por dentro. Nas telas isso virou janelas e botões coloridos com
+   listrinhas finas e transparência.
+
+4. Cores fortes e otimistas
+   Azul bem saturado, verde-grama, laranja. As áreas de trabalho eram
+   "amigáveis": barras de título grossas, cantos arredondados, letras em
+   negrito. A ideia era o computador parecer simpático, não técnico.
+
+5. Cromo, metal líquido e o visual "Y2K"
+   Na virada do milênio, o futuro era prateado: cromo com reflexos, formas de
+   bolha, bordas furta-cor (que mudam de cor como bolha de sabão) e luzes
+   ciano e roxas.
+
+6. Janelas com formatos livres (a cultura das skins)
+   Os players de música da época deixavam qualquer pessoa trocar o visual. As
+   janelas podiam ser redondas, ter "orelhas", alto-falantes desenhados, antenas.
+   Visualizadores animados e visores de LCD faziam parte da diversão.
+
+7. Preto brilhante e luz de destaque
+   No fim da década, a moda virou o preto piano: superfícies escuras muito
+   brilhantes, com uma única cor de luz (laranja, verde ou azul) marcando o que
+   é importante.
+
+O que tudo isso tem em comum: cada tela tinha PERSONALIDADE. Hoje as interfaces
+são planas e parecidas entre si. As dos anos 2000 eram cheias de textura, luz e
+brinquedo, e é por isso que tanta gente lembra delas com carinho.
+
+
+AS QUATRO SKINS DA PASTA "EXEMPLOS"
+-----------------------------------
+Todas são desenhos originais: pegam as IDEIAS da época, sem copiar logotipos,
+nomes ou artes de nenhum produto.
+
+  janela-anil.rbbskin      "Janela Anil"  (ideias 4 e 1)
+      Área de trabalho amigável de 2001: barra de título azul forte com botões
+      quadradinhos (o fechar é vermelho), corpo creme, painel lateral azul com
+      uma "caixa de grupo" para a lista e um botão-pílula verde escrito
+      "tocar"/"pausar". A lista fica dentro da janela.
+
+  gel-tangerina.rbbskin    "Gel Tangerina"  (ideias 3, 1 e 2)
+      Um rádio portátil de plástico laranja translúcido, com alça, listrinhas
+      finas e alto-falantes aparecendo por dentro do plástico. Botões de gel
+      "para lamber" e frente perolada. A lista abre numa janela à parte.
+
+  cromo-liquido.rbbskin    "Cromo Líquido"  (ideias 5 e 6)
+      Janela em forma de bolha de metal cromado, com um alto-falante redondo que
+      brilha em ciano, borda furta-cor, luzinhas coloridas e botão play que
+      parece uma esfera de vidro. A lista abre numa janela à parte.
+
+  laca-negra.rbbskin       "Laca Negra"  (ideias 7 e 2)
+      Preto piano brilhante com reflexo no "chão", luz âmbar embaixo, visor
+      preto com números laranja e lista escura. A lista fica dentro da janela.
+
+Todas têm modo mini próprio (Ctrl+M).
+
+Para instalar: engrenagem > aba "Skins e pacotes" > "Instalar skin..." e escolha
+o arquivo .rbbskin. Depois clique no nome da skin na lista.
+
+As fontes usadas (Tahoma, Trebuchet MS, Verdana, Segoe UI) já vêm no Windows;
+nenhuma fonte vai dentro dos pacotes.
+
+E TEM MAIS: a partir da versão 0.5.0 o programa já traz DENTRO dele outras quatro skins
+inspiradas na mesma época (nada para instalar): Gota Aqua (gel azul e listras finas),
+Bolha Translúcida (plástico azul com as peças por dentro), Carbono Hi-Fi (fibra de carbono
+e visor âmbar) e Futuro 2000 (cromo, roxo e neon). Elas aparecem na lista de skins e no
+botão meio preto e branco do topo da janela.

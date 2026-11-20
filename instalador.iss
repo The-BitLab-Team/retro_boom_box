@@ -36,6 +36,7 @@ Source: "dist\RetroBoomBox\*"; DestDir: "{app}"; Flags: recursesubdirs createall
 Source: "exemplos\*"; DestDir: "{app}\exemplos"; Flags: recursesubdirs createallsubdirs ignoreversion
 Source: "GUIA-DE-SKINS.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "LEIAME.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "ESTILOS-ANOS-2000.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "LICENSE"; DestDir: "{app}"; DestName: "LICENSE.txt"; Flags: ignoreversion
 
 [Icons]

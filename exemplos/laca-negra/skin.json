@@ -1,0 +1,317 @@
+{
+  "format": 1,
+  "id": "laca-negra",
+  "name": "Laca Negra",
+  "author": "Retro Boom Box",
+  "version": "1.0",
+  "description": "Preto piano brilhante com reflexo no \"chão\" e luz âmbar, no estilo dos aparelhos e programas de 2006 a 2008.",
+  "base": "aero",
+  "theme": {
+    "font": "Segoe UI",
+    "text": "#f2f2f2",
+    "text_dim": "#9a9fa8",
+    "glyph": "#f0f0f0",
+    "accent": "#ff9a1e",
+    "lcd_top": "#0a0a0c",
+    "lcd_bottom": "#000000",
+    "lcd_border": "#3c3f46",
+    "lcd_text": "#ffb347",
+    "lcd_dim": "#b0702a",
+    "list_bg": "#0c0d10",
+    "list_text": "#e8e8e8",
+    "list_dim": "#8a8f98",
+    "list_sel_top": "#ffb04a",
+    "list_sel_bottom": "#d86a00",
+    "list_sel_text": "#1a0d00",
+    "list_border": "#2e3036",
+    "dialog_bg": "#1c1d21",
+    "dialog_text": "#e8e8e8",
+    "field_bg": "#0c0d10",
+    "field_border": "#4a4d55",
+    "btn_top": "#6a6e76",
+    "btn_mid": "#2a2c31",
+    "btn_low": "#0b0c0e",
+    "btn_end": "#202226",
+    "btn_border": "#000000",
+    "play_light": "#ffe3a8",
+    "play_mid": "#ff9a1e",
+    "play_dark": "#c25800",
+    "groove_a": "#050506",
+    "groove_b": "#2a2c31",
+    "fill_a": "#ffd08a",
+    "fill_b": "#ff8a00",
+    "knob_a": "#ffffff",
+    "knob_b": "#45484f",
+    "viz_colors": [
+      "#ff6a00",
+      "#ffa23a",
+      "#ffe08a"
+    ]
+  },
+  "body": "body.png",
+  "layout": {
+    "window": [
+      1000,
+      584
+    ],
+    "logo": [
+      56,
+      34,
+      300,
+      28
+    ],
+    "lcd": [
+      56,
+      76,
+      560,
+      300
+    ],
+    "info": [
+      74,
+      88,
+      524,
+      124
+    ],
+    "stage": [
+      74,
+      218,
+      524,
+      110
+    ],
+    "viz_label": [
+      104,
+      338,
+      400,
+      26
+    ],
+    "seek": [
+      56,
+      394,
+      560,
+      28
+    ],
+    "volume": [
+      460,
+      456,
+      156,
+      28
+    ],
+    "source": [
+      648,
+      86,
+      196,
+      32
+    ],
+    "search": [
+      648,
+      126,
+      292,
+      30
+    ],
+    "list": [
+      648,
+      164,
+      292,
+      306
+    ],
+    "status": [
+      648,
+      476,
+      292,
+      30
+    ],
+    "buttons": {
+      "eq": [
+        768,
+        36,
+        26,
+        26
+      ],
+      "theme": [
+        798,
+        36,
+        26,
+        26
+      ],
+      "mini": [
+        828,
+        36,
+        26,
+        26
+      ],
+      "gear": [
+        858,
+        36,
+        26,
+        26
+      ],
+      "min": [
+        888,
+        36,
+        26,
+        26
+      ],
+      "close": [
+        918,
+        36,
+        26,
+        26
+      ],
+      "left": [
+        74,
+        338,
+        26,
+        26
+      ],
+      "right": [
+        542,
+        338,
+        26,
+        26
+      ],
+      "video": [
+        572,
+        338,
+        26,
+        26
+      ],
+      "plus": [
+        852,
+        89,
+        26,
+        26
+      ],
+      "dots": [
+        882,
+        89,
+        26,
+        26
+      ],
+      "folder": [
+        912,
+        89,
+        26,
+        26
+      ],
+      "shuffle": [
+        56,
+        455,
+        30,
+        30
+      ],
+      "prev": [
+        94,
+        448,
+        44,
+        44
+      ],
+      "play": [
+        146,
+        438,
+        64,
+        64
+      ],
+      "stop": [
+        218,
+        448,
+        44,
+        44
+      ],
+      "next": [
+        270,
+        448,
+        44,
+        44
+      ],
+      "repeat": [
+        322,
+        455,
+        30,
+        30
+      ],
+      "mute": [
+        420,
+        455,
+        30,
+        30
+      ]
+    }
+  },
+  "mini": {
+    "body": "mini.png",
+    "layout": {
+      "window": [
+        620,
+        168
+      ],
+      "lcd": [
+        32,
+        26,
+        344,
+        62
+      ],
+      "info": [
+        38,
+        29,
+        332,
+        56
+      ],
+      "seek": [
+        30,
+        96,
+        348,
+        24
+      ],
+      "buttons": {
+        "prev": [
+          394,
+          46,
+          36,
+          36
+        ],
+        "play": [
+          436,
+          36,
+          56,
+          56
+        ],
+        "next": [
+          498,
+          46,
+          36,
+          36
+        ],
+        "eq": [
+          544,
+          22,
+          24,
+          24
+        ],
+        "mini": [
+          572,
+          22,
+          24,
+          24
+        ],
+        "mute": [
+          416,
+          100,
+          26,
+          26
+        ],
+        "min": [
+          544,
+          100,
+          24,
+          24
+        ],
+        "close": [
+          572,
+          100,
+          24,
+          24
+        ]
+      }
+    }
+  }
+}

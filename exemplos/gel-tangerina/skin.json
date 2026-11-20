@@ -1,0 +1,275 @@
+{
+  "format": 1,
+  "id": "gel-tangerina",
+  "name": "Gel Tangerina",
+  "author": "Retro Boom Box",
+  "version": "1.0",
+  "description": "Plástico laranja translúcido com listrinhas, alto-falantes aparecendo por dentro e botões de gel \"para lamber\". A lista abre numa janela à parte.",
+  "base": "aero",
+  "theme": {
+    "font": "Trebuchet MS",
+    "text": "#5a2600",
+    "text_dim": "#7a3a00",
+    "glyph": "#6a2e00",
+    "accent": "#ff7a00",
+    "lcd_top": "#fff4dc",
+    "lcd_bottom": "#ffd08a",
+    "lcd_border": "#ffffff",
+    "lcd_text": "#4a2000",
+    "lcd_dim": "#9a5410",
+    "list_bg": "#fffaf2",
+    "list_text": "#4a2000",
+    "list_dim": "#9a5c20",
+    "list_sel_top": "#ffd7a3",
+    "list_sel_bottom": "#ff9d3c",
+    "list_sel_text": "#3a1600",
+    "list_border": "#f0b070",
+    "dialog_bg": "#f6f2ea",
+    "dialog_text": "#4a2000",
+    "field_bg": "#ffffff",
+    "field_border": "#e09040",
+    "btn_top": "#ffffff",
+    "btn_mid": "#ffe2bd",
+    "btn_low": "#ffad55",
+    "btn_end": "#ffd49a",
+    "btn_border": "#c06410",
+    "play_light": "#ffe0b0",
+    "play_mid": "#ff9a2e",
+    "play_dark": "#d65a00",
+    "groove_a": "#e8b98a",
+    "groove_b": "#fff1de",
+    "fill_a": "#ffd39a",
+    "fill_b": "#ff7a00",
+    "knob_a": "#ffffff",
+    "knob_b": "#ff9a3c",
+    "viz_colors": [
+      "#ff5a00",
+      "#ff9d2e",
+      "#ffcf4a"
+    ]
+  },
+  "body": "body.png",
+  "layout": {
+    "window": [
+      820,
+      500
+    ],
+    "logo": [
+      74,
+      78,
+      260,
+      28
+    ],
+    "lcd": [
+      200,
+      124,
+      420,
+      200
+    ],
+    "info": [
+      210,
+      132,
+      400,
+      110
+    ],
+    "stage": [
+      210,
+      244,
+      400,
+      48
+    ],
+    "viz_label": [
+      240,
+      296,
+      300,
+      24
+    ],
+    "seek": [
+      200,
+      332,
+      420,
+      28
+    ],
+    "volume": [
+      62,
+      400,
+      112,
+      28
+    ],
+    "buttons": {
+      "mini": [
+        596,
+        79,
+        26,
+        26
+      ],
+      "theme": [
+        626,
+        79,
+        26,
+        26
+      ],
+      "gear": [
+        656,
+        79,
+        26,
+        26
+      ],
+      "min": [
+        686,
+        79,
+        26,
+        26
+      ],
+      "close": [
+        716,
+        79,
+        26,
+        26
+      ],
+      "left": [
+        210,
+        296,
+        26,
+        26
+      ],
+      "video": [
+        554,
+        296,
+        26,
+        26
+      ],
+      "right": [
+        584,
+        296,
+        26,
+        26
+      ],
+      "shuffle": [
+        262,
+        383,
+        30,
+        30
+      ],
+      "prev": [
+        300,
+        376,
+        44,
+        44
+      ],
+      "play": [
+        352,
+        366,
+        64,
+        64
+      ],
+      "stop": [
+        424,
+        376,
+        44,
+        44
+      ],
+      "next": [
+        476,
+        376,
+        44,
+        44
+      ],
+      "repeat": [
+        528,
+        383,
+        30,
+        30
+      ],
+      "mute": [
+        101,
+        358,
+        30,
+        30
+      ],
+      "playlist": [
+        668,
+        380,
+        30,
+        30
+      ],
+      "eq": [
+        708,
+        380,
+        30,
+        30
+      ]
+    }
+  },
+  "mini": {
+    "body": "mini.png",
+    "layout": {
+      "window": [
+        600,
+        160
+      ],
+      "lcd": [
+        40,
+        30,
+        320,
+        62
+      ],
+      "info": [
+        46,
+        33,
+        308,
+        56
+      ],
+      "seek": [
+        38,
+        98,
+        324,
+        24
+      ],
+      "buttons": {
+        "prev": [
+          380,
+          52,
+          34,
+          34
+        ],
+        "play": [
+          418,
+          42,
+          54,
+          54
+        ],
+        "next": [
+          476,
+          52,
+          34,
+          34
+        ],
+        "eq": [
+          384,
+          100,
+          26,
+          26
+        ],
+        "mini": [
+          414,
+          100,
+          26,
+          26
+        ],
+        "min": [
+          444,
+          100,
+          26,
+          26
+        ],
+        "close": [
+          474,
+          100,
+          26,
+          26
+        ]
+      }
+    }
+  }
+}

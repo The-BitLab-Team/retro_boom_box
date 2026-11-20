@@ -23,10 +23,12 @@ PARTE 1 - INSTALAR (para quem só quer usar)
    Os visualizadores ativados aparecem nas setinhas embaixo do visor.
 5. Os exemplos que acompanham o programa estão na pasta "exemplos".
    Teste instalando "capsula-azul.rbbskin" e "chuva-neon.rbbviz".
-   As seis skins que já vêm no programa (Frutiger Aero, Metal escovado, Gota Aqua, Bolha
-   Translúcida, Carbono Hi-Fi e Cromo Líquido) ficam na pasta app\builtin_skins do código-fonte.
-   Gota Aqua, Bolha, Carbono e Cromo usam imagens de botões e corpo próprios e servem de
-   modelo completo (corpo, modo mini e botões play/pause com imagens).
+   Há também 4 skins inspiradas nas interfaces dos anos 2000 (janela-anil,
+   gel-tangerina, cromo-liquido e laca-negra). Veja ESTILOS-ANOS-2000.txt.
+   As seis skins que já vêm dentro do programa (Frutiger Aero, Metal escovado, Gota Aqua,
+   Bolha Translúcida, Carbono Hi-Fi e Futuro 2000) ficam na pasta app\builtin_skins do
+   código-fonte. As quatro últimas usam imagens de corpo, modo mini e botões play/pause
+   próprias e servem de modelo completo.
 
 Atalho: o botão do círculo meio preto/branco, no topo do player, passa para a
 próxima skin instalada.

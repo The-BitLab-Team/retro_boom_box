@@ -1,7 +1,7 @@
 # Retro Boom Box
 
 Um player de músicas e vídeos com a cara dos anos 90 e 2000. O visual muda por **skins**
-(já vêm seis: Frutiger Aero, Metal escovado, Gota Aqua, Bolha Translúcida, Carbono Hi-Fi e Cromo Líquido) e os visualizadores podem ser expandidos com **pacotes**.
+(já vêm seis: Frutiger Aero, Metal escovado, Gota Aqua, Bolha Translúcida, Carbono Hi-Fi e Futuro 2000) e os visualizadores podem ser expandidos com **pacotes**.
 Feito em Python com PySide6 (Qt). Inspirado no estilo do Windows Media Player e do Winamp,
 com arte original.
 
@@ -10,7 +10,7 @@ com arte original.
 
 As quatro skins mais novas, inspiradas nos anos 2000 (gel Aqua, plástico translúcido, fibra de carbono com visor âmbar e cromo neon):
 
-![Gota Aqua, Bolha Translúcida, Carbono Hi-Fi e Cromo Líquido](docs/capturas/s5_novas_skins.png)
+![Gota Aqua, Bolha Translúcida, Carbono Hi-Fi e Futuro 2000](docs/capturas/s5_novas_skins.png)
 ![Modo mini das quatro skins novas](docs/capturas/s5_novos_minis.png)
 
 ## O que tem
@@ -43,7 +43,8 @@ o [Inno Setup 6](https://jrsoftware.org/isdl.php) é opcional, só para o arquiv
 | `LEIAME.txt` | Como usar o programa, atalhos e formatos |
 | `GUIA-DE-SKINS.txt` | Como criar skins e pacotes de visualizadores |
 | `ATUALIZACOES.txt` | Como publicar versões novas e como funciona o aviso de atualização |
-| `exemplos/` | 3 skins e 1 visualizador prontos para instalar e servir de modelo |
+| `ESTILOS-ANOS-2000.txt` | O que tornava as interfaces dos anos 2000 marcantes e as 4 skins de exemplo inspiradas nelas |
+| `exemplos/` | 7 skins (3 cápsulas e 4 dos anos 2000) e 1 visualizador prontos para instalar e servir de modelo |
 
 ## Licença
 

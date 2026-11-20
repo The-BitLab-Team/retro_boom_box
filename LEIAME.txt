@@ -34,7 +34,7 @@ NOVIDADES DA VERSÃO 0.5.0
     Gota Aqua ........... gel azul, listras finas e bolinhas coloridas (estilo Aqua)
     Bolha Translúcida ... plástico azul que deixa ver as peças por dentro (estilo Y2K)
     Carbono Hi-Fi ....... fibra de carbono, cromo e visor âmbar (aparelho de som de rack)
-    Cromo Líquido ....... cromo espelhado, roxo e luz neon (futurismo do ano 2000)
+    Futuro 2000 ......... cromo espelhado, roxo e luz neon (futurismo do ano 2000)
   Todas têm modo mini com desenho próprio. Para trocar: botão meio preto e branco do topo
   da janela, ou Configurações > Skins e pacotes.
 - LICENÇA: o programa agora usa a PolyForm Noncommercial 1.0.0. Resumo: pode usar, modificar e
@@ -69,11 +69,13 @@ NOVIDADES DA VERSÃO 0.4
 SKINS E PACOTES
 - Skins mudam o visual inteiro do player: cores, botões e até o formato da janela.
   Já vêm seis: Frutiger Aero, Metal escovado, Gota Aqua, Bolha Translúcida, Carbono Hi-Fi
-  e Cromo Líquido.
+  e Futuro 2000.
 - Em Configurações > "Skins e pacotes" você instala skins (.rbbskin) e pacotes de
   visualizadores (.rbbviz), remove e escolhe qual usar.
-- Na pasta "exemplos" tem 3 skins (capsula-azul, capsula-verde, neon-roxo) e um
+- Na pasta "exemplos" tem 7 skins (capsula-azul, capsula-verde, neon-roxo e as 4 dos
+  anos 2000: janela-anil, gel-tangerina, cromo-liquido, laca-negra) e um
   visualizador (chuva-neon) prontos para instalar e para servir de modelo.
+  O texto ESTILOS-ANOS-2000.txt explica a inspiração das skins novas.
 - Para CRIAR suas skins e visualizadores, leia o GUIA-DE-SKINS.txt.
 - ATENÇÃO: pacotes de visualizadores são pequenos programas. Por segurança ficam
   desligados até você marcar a caixinha deles, e você deve ativar só os de quem confia.

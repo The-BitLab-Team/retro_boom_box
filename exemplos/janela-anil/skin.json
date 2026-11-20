@@ -1,0 +1,320 @@
+{
+  "format": 1,
+  "id": "janela-anil",
+  "name": "Janela Anil",
+  "author": "Retro Boom Box",
+  "version": "1.0",
+  "description": "Inspirada nas áreas de trabalho de 2001: barra de título azul forte, corpo creme, painel lateral com caixa de grupo e um botão-pílula verde.",
+  "base": "metal",
+  "theme": {
+    "font": "Tahoma",
+    "text": "#ffffff",
+    "text_dim": "#1e3e9a",
+    "glyph": "#17398f",
+    "accent": "#2f9a33",
+    "lcd_top": "#0d1f47",
+    "lcd_bottom": "#030916",
+    "lcd_border": "#7f9db9",
+    "lcd_text": "#a8dcff",
+    "lcd_dim": "#5f8fc2",
+    "list_bg": "#ffffff",
+    "list_text": "#1b2a4a",
+    "list_dim": "#6a7a96",
+    "list_sel_top": "#3d7bdc",
+    "list_sel_bottom": "#2a5fc0",
+    "list_sel_text": "#ffffff",
+    "list_border": "#7f9db9",
+    "dialog_bg": "#efebdc",
+    "dialog_text": "#1b2a4a",
+    "field_bg": "#ffffff",
+    "field_border": "#7f9db9",
+    "btn_top": "#ffffff",
+    "btn_mid": "#f5f3ec",
+    "btn_low": "#e6e2d4",
+    "btn_end": "#d6cfb8",
+    "btn_border": "#2c4f9e",
+    "groove_a": "#ffffff",
+    "groove_b": "#9fb4d8",
+    "fill_a": "#a7ea8f",
+    "fill_b": "#33a336",
+    "knob_a": "#ffffff",
+    "knob_b": "#c7cfdf",
+    "viz_colors": [
+      "#7dff6a",
+      "#3fd1ff",
+      "#4f7dff"
+    ]
+  },
+  "body": "body.png",
+  "layout": {
+    "window": [
+      940,
+      548
+    ],
+    "logo": [
+      30,
+      14,
+      300,
+      34
+    ],
+    "lcd": [
+      34,
+      70,
+      560,
+      300
+    ],
+    "info": [
+      52,
+      82,
+      524,
+      124
+    ],
+    "stage": [
+      52,
+      212,
+      524,
+      114
+    ],
+    "viz_label": [
+      86,
+      336,
+      420,
+      22
+    ],
+    "seek": [
+      34,
+      386,
+      560,
+      28
+    ],
+    "volume": [
+      494,
+      455,
+      100,
+      28
+    ],
+    "source": [
+      632,
+      104,
+      186,
+      32
+    ],
+    "search": [
+      632,
+      142,
+      270,
+      30
+    ],
+    "list": [
+      632,
+      180,
+      270,
+      292
+    ],
+    "status": [
+      632,
+      476,
+      270,
+      30
+    ],
+    "buttons": {
+      "eq": [
+        728,
+        17,
+        28,
+        28
+      ],
+      "theme": [
+        760,
+        17,
+        28,
+        28
+      ],
+      "mini": [
+        792,
+        17,
+        28,
+        28
+      ],
+      "gear": [
+        824,
+        17,
+        28,
+        28
+      ],
+      "min": [
+        856,
+        17,
+        28,
+        28
+      ],
+      "close": [
+        888,
+        17,
+        28,
+        28
+      ],
+      "left": [
+        52,
+        336,
+        28,
+        22
+      ],
+      "right": [
+        512,
+        336,
+        28,
+        22
+      ],
+      "video": [
+        546,
+        336,
+        28,
+        22
+      ],
+      "plus": [
+        822,
+        107,
+        26,
+        26
+      ],
+      "dots": [
+        850,
+        107,
+        26,
+        26
+      ],
+      "folder": [
+        878,
+        107,
+        26,
+        26
+      ],
+      "shuffle": [
+        34,
+        456,
+        34,
+        26
+      ],
+      "prev": [
+        78,
+        448,
+        50,
+        42
+      ],
+      "play": [
+        136,
+        443,
+        120,
+        52
+      ],
+      "stop": [
+        264,
+        448,
+        50,
+        42
+      ],
+      "next": [
+        322,
+        448,
+        50,
+        42
+      ],
+      "repeat": [
+        380,
+        456,
+        34,
+        26
+      ],
+      "mute": [
+        452,
+        456,
+        34,
+        26
+      ]
+    }
+  },
+  "mini": {
+    "body": "mini.png",
+    "layout": {
+      "window": [
+        620,
+        150
+      ],
+      "lcd": [
+        24,
+        46,
+        356,
+        64
+      ],
+      "info": [
+        30,
+        50,
+        344,
+        56
+      ],
+      "seek": [
+        22,
+        112,
+        360,
+        22
+      ],
+      "buttons": {
+        "eq": [
+          480,
+          12,
+          24,
+          24
+        ],
+        "mini": [
+          508,
+          12,
+          24,
+          24
+        ],
+        "min": [
+          536,
+          12,
+          24,
+          24
+        ],
+        "close": [
+          564,
+          12,
+          24,
+          24
+        ],
+        "prev": [
+          392,
+          62,
+          46,
+          38
+        ],
+        "play": [
+          444,
+          56,
+          100,
+          46
+        ],
+        "next": [
+          550,
+          62,
+          46,
+          38
+        ],
+        "stop": [
+          470,
+          106,
+          46,
+          26
+        ],
+        "mute": [
+          522,
+          106,
+          34,
+          26
+        ]
+      }
+    }
+  }
+}

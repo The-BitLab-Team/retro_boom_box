@@ -1,0 +1,275 @@
+{
+  "format": 1,
+  "id": "cromo-liquido",
+  "name": "Cromo Líquido",
+  "author": "Retro Boom Box",
+  "version": "1.0",
+  "description": "Metal líquido com forma de bolha, alto-falante brilhando e borda furta-cor, no espírito das skins Y2K. A lista abre numa janela à parte.",
+  "base": "aero",
+  "theme": {
+    "font": "Verdana",
+    "text": "#16202c",
+    "text_dim": "#3a4a5c",
+    "glyph": "#14202e",
+    "accent": "#18c8ff",
+    "lcd_top": "#1a0f33",
+    "lcd_bottom": "#06040f",
+    "lcd_border": "#c9d3de",
+    "lcd_text": "#6ff6ff",
+    "lcd_dim": "#b07cff",
+    "list_bg": "#0d0a1c",
+    "list_text": "#8ff4ff",
+    "list_dim": "#a083e0",
+    "list_sel_top": "#6a54c8",
+    "list_sel_bottom": "#4a35a0",
+    "list_sel_text": "#ffffff",
+    "list_border": "#8e9aa8",
+    "dialog_bg": "#dfe5ec",
+    "dialog_text": "#16202c",
+    "field_bg": "#f7f9fb",
+    "field_border": "#7c8898",
+    "btn_top": "#ffffff",
+    "btn_mid": "#d8e0e8",
+    "btn_low": "#828fa0",
+    "btn_end": "#e4eaf0",
+    "btn_border": "#3c4652",
+    "play_light": "#d9ffff",
+    "play_mid": "#2fd6ff",
+    "play_dark": "#0a63c9",
+    "groove_a": "#1a1f29",
+    "groove_b": "#5a6576",
+    "fill_a": "#9ff8ff",
+    "fill_b": "#b46bff",
+    "knob_a": "#ffffff",
+    "knob_b": "#7c8898",
+    "viz_colors": [
+      "#ff5ad8",
+      "#5af0ff",
+      "#b6ff5a"
+    ]
+  },
+  "body": "body.png",
+  "layout": {
+    "window": [
+      820,
+      520
+    ],
+    "logo": [
+      320,
+      62,
+      190,
+      28
+    ],
+    "lcd": [
+      316,
+      108,
+      428,
+      214
+    ],
+    "info": [
+      326,
+      116,
+      408,
+      110
+    ],
+    "stage": [
+      326,
+      228,
+      408,
+      56
+    ],
+    "viz_label": [
+      356,
+      289,
+      316,
+      26
+    ],
+    "seek": [
+      316,
+      330,
+      428,
+      28
+    ],
+    "volume": [
+      100,
+      376,
+      110,
+      26
+    ],
+    "buttons": {
+      "eq": [
+        514,
+        63,
+        26,
+        26
+      ],
+      "mini": [
+        544,
+        63,
+        26,
+        26
+      ],
+      "theme": [
+        574,
+        63,
+        26,
+        26
+      ],
+      "gear": [
+        604,
+        63,
+        26,
+        26
+      ],
+      "min": [
+        634,
+        63,
+        26,
+        26
+      ],
+      "close": [
+        664,
+        63,
+        26,
+        26
+      ],
+      "left": [
+        326,
+        289,
+        26,
+        26
+      ],
+      "video": [
+        678,
+        289,
+        26,
+        26
+      ],
+      "right": [
+        708,
+        289,
+        26,
+        26
+      ],
+      "shuffle": [
+        382,
+        384,
+        30,
+        30
+      ],
+      "prev": [
+        420,
+        377,
+        44,
+        44
+      ],
+      "play": [
+        472,
+        366,
+        66,
+        66
+      ],
+      "stop": [
+        546,
+        377,
+        44,
+        44
+      ],
+      "next": [
+        598,
+        377,
+        44,
+        44
+      ],
+      "repeat": [
+        650,
+        384,
+        30,
+        30
+      ],
+      "mute": [
+        216,
+        374,
+        30,
+        30
+      ],
+      "playlist": [
+        140,
+        122,
+        30,
+        30
+      ]
+    }
+  },
+  "mini": {
+    "body": "mini.png",
+    "layout": {
+      "window": [
+        600,
+        150
+      ],
+      "lcd": [
+        156,
+        32,
+        238,
+        58
+      ],
+      "info": [
+        160,
+        34,
+        230,
+        54
+      ],
+      "seek": [
+        152,
+        96,
+        246,
+        24
+      ],
+      "buttons": {
+        "prev": [
+          414,
+          52,
+          36,
+          36
+        ],
+        "play": [
+          454,
+          42,
+          56,
+          56
+        ],
+        "next": [
+          514,
+          52,
+          36,
+          36
+        ],
+        "mini": [
+          430,
+          104,
+          24,
+          24
+        ],
+        "eq": [
+          458,
+          104,
+          24,
+          24
+        ],
+        "min": [
+          486,
+          104,
+          24,
+          24
+        ],
+        "close": [
+          514,
+          104,
+          24,
+          24
+        ]
+      }
+    }
+  }
+}
